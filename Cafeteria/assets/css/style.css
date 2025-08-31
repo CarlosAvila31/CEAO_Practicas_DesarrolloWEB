@@ -1,0 +1,276 @@
+body{
+    font-family: "Ovo", serif;
+    font-weight: 400;
+    font-style: normal;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #afa3869f;
+}
+
+.content{
+    background-color: #AFA386;
+    margin: 40px auto;
+    width: 90%;
+    padding: 20px;
+    box-shadow: 0 4px 10px silver;
+    border-radius: 10px;
+    max-width: 1200px;
+    box-sizing: border-box; /*Calcula el tamaño de la caja*/
+}
+
+header{
+    background-color: #4E351E;
+    padding: 10px 0px 10px 15px;
+    border-radius: 10px 0px 10px 15px;
+    font-family: "Ovo", serif;
+    font-weight: 800;
+    font-style: normal;
+    font-size: larger;
+    color: #f0edebc5;
+    text-align: center;
+}
+
+header > h1{
+    text-shadow: 1px 1px 2px #000;
+}
+
+nav, footer{
+    background-color: #6C5234;
+    border-radius: 10px;
+    font-size: clamp(1.5rem, 5vw, 2rem);
+}
+
+nav ul, footer ul, .info-contacto ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /*Nos indica como se va a comportar las cosas*/
+    justify-content: space-around;
+}
+
+nav ul li a, footer ul li a{
+    display: block;
+    padding: 15px 0;
+    color: #e6dfdf;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li, footer ul li{
+    padding: 15px;
+    color: #0a0a0a;
+    text-decoration: none;
+    font-weight: bold;
+    flex: 1;
+    text-align: center;
+}
+
+nav ul li:hover, footer ul li:hover{
+    background-color: rgb(56, 55, 55);
+    color: #fff;
+}
+
+nav ul li a:hover, footer ul li a:hover{
+    color: #fff;
+}
+section {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*Animación del carrusel*/
+
+.carrusel{
+    width: 100%;
+    height: 30rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.img-productos{
+    display: flex;
+    width: max-content;
+    animation: scroll 30s linear infinite;
+}
+
+.img-productos img{
+    width: 50rem;
+    height: 30rem;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }        /* 1ra imagen */
+    100%      { transform: translateX(-250rem); }        /* regresa a la 1ra */
+}
+
+#menu, #promos, #nosotros, #recomendacion{
+    width: 90%;
+    height: 78%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #E5D7C4;
+    border-radius: 12px;
+    color: #000;
+    font-size: large;
+}
+
+#menu ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li{
+    margin: 1.6rem;
+    border-left: 4px solid #000;
+    padding-left: 1rem;
+    transition: background-color 0.3 ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu ul li:hover, #promos ul li:hover, .coldbrew:hover, .barista:hover{
+    background-color: #e6e49d;
+}
+
+#menu ul li strong{
+    font-size: 1.15rem;
+    color: #7f5a1a;
+}
+
+#menu ul li small{
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #1d1d1c;
+    margin-top: 0.2rem;
+}
+
+#promos ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#promos ul li{
+    margin: 1.6rem;
+    border-left: 4px solid #000;
+    padding-left: 1rem;
+    transition: background-color 0.3 ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#promos ul li strong{
+    font-size: 1.15rem;
+    color: #7f5a1a;
+}
+
+.promo-list{
+    list-style: none;
+    padding: 0  ;
+    margin: 0;
+}
+
+.promo-item{
+    display: flex;
+    align-items: center;
+    background: #fff8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(80, 60, 40, 0.08);
+    margin-bottom: 18px;
+    padding: 16px;
+    gap: 18px;
+    width: 100%;
+    max-width: 950px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.promo-item img{
+    width: 250px;
+    height: 180px;
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #d2b48c;
+}
+
+.promo-text{
+    font-size: 1.08em;
+    color: #4b3b2b;
+    flex: 1;
+}
+
+
+#nosotros, #recomendacion{
+    font-size: 1.2em;
+    color: #1d1d1c;
+    text-align: justify;
+    background-color: #fff8f0;
+}
+
+#nosotros img{
+    width: 75%;
+    height: 500px;
+    border-radius: 25px;
+    margin-top: 15px;
+    box-shadow: 0 2px 8px rgba(80, 60, 40, 0.08);
+    display: block;      
+    margin-left: auto;       
+    margin-right: auto;  
+}
+
+/*#recomendacion img{
+    border-radius: 10px;
+    object-fit: cover;
+    border: 2px solid #d2b48c
+}*/
+
+.recomendacion-flex{
+    display: flex;
+    gap: 32px;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;    
+}
+
+.coldbrew, .barista{
+    background: #fff8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(80, 60, 40, 0.08);
+    padding: 18px;
+    width: 320px;
+    max-width: 90vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.coldbrew p, .barista p{
+    font-size: 1.08em;
+    color: #4b3b2b;
+    margin-bottom: 12px;
+    text-align: center;
+}
+
+.coldbrew img, .barista img{
+    width: 90%;
+    max-width: 260px;
+    height: auto;
+    border-radius: 15px;
+    box-shadow: 0 2px 8px rgba(80, 60, 40, 0.08);
+    object-fit: cover;
+    border: 2px solid #d2b48c;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

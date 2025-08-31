@@ -1,0 +1,40 @@
+#menu {
+    width: 90%;
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    background-color: #fffff9;
+    border-radius: 12px;
+    color: #4b3b2b;
+}
+
+#menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#menu ul li {
+    margin-bottom: 1.6rem;
+    border-left: 4px solid #bd956d;
+    padding-left: 1rem;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#menu ul li:hover {
+    background-color: #f3e9d2;
+}
+
+#menu ul li strong {
+    font-size: 1.15rem;
+    color: #7f5a1a;
+}
+
+#menu ul li small {
+    display: block;
+    font-size: 0.85rem;
+    font-style: italic;
+    color: #8b7d65;
+    margin-top: 0.2rem;
+}

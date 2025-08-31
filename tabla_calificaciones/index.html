@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es" translate="no">
+    <head>
+        <meta charset="UTF-8"> <!-- la etiquita meta te permite añadir metadatos a la pagina-->
+        <title>CALIFICACIONES</title>
+    </head>
+
+    <body>
+        <table border="1">
+            <caption> <strong>CONTROL DE CALIFICACIONES</strong></caption>
+            <thead>
+                <tr>
+                    <th>Nombre Alumno</th>
+                    <th>Examen Parcial</th>
+                    <th>Examen Final</th>
+                    <th>Portafolio</th>
+                    <th>PIA</th>
+                </tr>
+            </thead>
+            
+            <tbody>
+                <tr>
+                    <td>Carlos Avila</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td>100</td>
+                    <td rowspan="3">100</td> <!--Con la propiedad rowspan combinas varias filas verticalmente-->
+                </tr>
+                <tr>
+                    <td>Brissa Flores</td>
+                    <td>0</td>
+                    <td>0</td>
+                    <td rowspan="2">0</td>
+                </tr>
+
+                <tr>
+                    <td>Devany Garza</td>
+                    <td>0</td>
+                    <td>0</td>
+                </tr>
+                
+                <tr>
+                    <td>TOTAL</td>
+                    <td colspan="4">3</td> <!--la propiedad colspan me permite combinar varias columnas horizontalmente si lo quiero hacer verticalmente sera rowspan-->
+                </tr>
+            </tbody>
+            
+        </table>    
+    </body>
+</html>
+
+</html>
