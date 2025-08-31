@@ -179,3 +179,51 @@ nav ul li a:hover{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
+#promos ul li{
+    margin: 1.6rem;
+    border-left: 4px solid #000;
+    padding-left: 1rem;
+    transition: background-color 0.3 ease;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+#promos ul li strong{
+    font-size: 1.15rem;
+    color: #7f5a1a;
+}
+
+.promo-list{
+    list-style: none;
+    padding: 0  ;
+    margin: 0;
+}
+
+.promo-item{
+    display: flex;
+    align-items: center;
+    background: #fff8f0;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(80, 60, 40, 0.08);
+    margin-bottom: 18px;
+    padding: 16px;
+    gap: 18px;
+    width: 100%;
+    max-width: 950px;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.promo-text{
+    font-size: 1.08em;
+    color: #4b3b2b;
+    flex: 1;
+}
+
+#jobs ul li:hover{
+    background-color: #d9e1f1;
+}
