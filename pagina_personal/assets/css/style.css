@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: #7d8491;
     margin: 0;
@@ -226,4 +230,5 @@ nav ul li a:hover{
 
 #jobs ul li:hover{
     background-color: #d9e1f1;
+
 }
