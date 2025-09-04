@@ -3,7 +3,10 @@ html{
 }
 
 body{
-    background-color: #7d8491;
+    background-image: url("https://cdn.shopify.com/s/files/1/0182/2915/files/01A_5638_1024x1024.jpg?v=1750164541");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     margin: 0;
     font-family: "Lato", sans-serif;
     font-weight: 500;
@@ -37,6 +40,20 @@ header{
 
 header > h1{
     text-shadow: 1px 1px 2px #000;
+}
+
+.sobre_mi_flex > h1, .mi_exp_flex > h1, #perspectiva > h1, #trabajos > h1{
+
+    text-align: center;
+    font-size: clamp(1.8rem, 5vw, 2rem);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.sobre_mi_flex:hover > h1, .mi_exp_flex:hover  > h1, #perspectiva:hover  > h1, #trabajos:hover  > h1{
+    color: #dbd95f;
+    font-size: clamp(2rem, 5vw, 3rem);;
 }
 
 nav{
@@ -164,6 +181,8 @@ nav ul li a:hover{
 
 .auto_fav:hover, .musica_fav:hover, .superheroe_fav:hover{
     background-color: #192338;
+    transform: scale(1.08);         /* Hace el cuadro más grande */
+    transition: transform 0.2s;     /* Suaviza el efecto */
 }
 
 .auto_fav h1, .auto_fav p, .musica_fav h1, .musica_fav p, .superheroe_fav h1, .superheroe_fav p{
@@ -230,5 +249,6 @@ nav ul li a:hover{
 
 #jobs ul li:hover{
     background-color: #d9e1f1;
-
+    transform: scale(1.08);         /* Hace el cuadro más grande */
+    transition: transform 0.2s;
 }
