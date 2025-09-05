@@ -22,7 +22,7 @@ body{
     max-width: 1200px;
     box-sizing: border-box;
     background-color: #1a1d29;
-    color: #FBF9E4;
+    color: #d9e1f1;
     font-size: 1.2rem;
 }
 
@@ -34,7 +34,7 @@ header{
     font-weight: 800;
     font-style: normal;
     font-size: larger;
-    color: #FBF9E4;
+    color: #d9e1f1;
     text-align: center;
 }
 
@@ -42,7 +42,7 @@ header > h1{
     text-shadow: 1px 1px 2px #000;
 }
 
-.sobre_mi_flex > h1, .mi_exp_flex > h1, #perspectiva > h1, #trabajos > h1{
+.sobre_mi_flex > h1, .card-header> h1, #trabajos > h1{
 
     text-align: center;
     font-size: clamp(1.8rem, 5vw, 2rem);
@@ -51,10 +51,22 @@ header > h1{
     text-shadow: 1px 1px 2px #000;
 }
 
-.sobre_mi_flex:hover > h1, .mi_exp_flex:hover  > h1, #perspectiva:hover  > h1, #trabajos:hover  > h1{
-    color: #dbd95f;
+.card-header > h1{
+    color: #d9e1f1;
+}
+
+.card-header{
+    background-color: #3d3f4a;
+}
+.card-body{
+    background-color: #b1b2b5;
+}
+.sobre_mi_flex:hover > h1, .card-header:hover  > h1, #trabajos:hover  > h1{
+    color: #fff;
     font-size: clamp(2rem, 5vw, 3rem);;
 }
+
+
 
 nav{
     background-color: #192338;
@@ -119,35 +131,13 @@ nav ul li a:hover{
     padding-top: 40px;
 }
 
-.mi_exp_flex{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    background-color: #1a1d29;
-    padding: 20px;
-    border-radius: 10px;
-    width: 90%;
-    max-width: 90vw;
-    margin: 0 auto;
-    padding-top: 40px;
-    font-weight: 400;
-}
 
-#foto_mia{
-    width: 280px;
-    height: 400px;
-    object-fit: cover;
-    border-radius: 15px;
-    margin-left: auto;
-    margin-right: auto;
-    padding: 10px;
-    box-shadow: 0 4px 10px #000;
-}
+
+
 
 #fote{
-    width: 500px;
-    height: 600px;
+    width: 250px;
+    height: 180x;
     object-fit: cover;
     border-radius: 15px;
     margin-left: auto;
@@ -155,6 +145,12 @@ nav ul li a:hover{
     padding: 10px;
     box-shadow: 0 4px 10px #000;
     background-color: #b1b2b5;
+}
+
+#fote:hover{
+    transform: scale(1.08);         /* Hace la imagen más grande */
+    transition: transform 0.2s;     /* Suaviza el efecto */
+    box-shadow: 0 6px 15px #000;
 }
 
 .fav_flex{
@@ -202,6 +198,9 @@ nav ul li a:hover{
     margin-left: auto;
     margin-right: auto;
 }
+
+
+
 
 
 
