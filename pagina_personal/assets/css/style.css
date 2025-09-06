@@ -61,6 +61,15 @@ header > h1{
 .card-body{
     background-color: #b1b2b5;
 }
+
+
+.sobre_mi_flex > h1, .card-header > h1, #trabajos > h1{
+    font-family: "Noto Sans TC", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
 .sobre_mi_flex:hover > h1, .card-header:hover  > h1, #trabajos:hover  > h1{
     color: #fff;
     font-size: clamp(2rem, 5vw, 3rem);;
@@ -223,27 +232,34 @@ nav ul li a:hover{
     list-style: none;
     padding: 0  ;
     margin: 0;
+    text-align: center; /* Centra los elementos inline-block */
+    width: 100%;
+    display: block;
 }
 
 .promo-item{
-    display: flex;
+    display: inline-block;
     align-items: center;
-    background: #fff8f0;
+    background: #3d3f4a;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(80, 60, 40, 0.08);
     margin-bottom: 18px;
     padding: 16px;
     gap: 18px;
-    width: 100%;
-    max-width: 950px;
-    margin-left: 0;
-    margin-right: 0;
+    margin: 0 10px 18px 55px;
 }
 
-.promo-text{
+.promo-text > a{
     font-size: 1.08em;
-    color: #4b3b2b;
+    color: #b1b2b5;
     flex: 1;
+    font-family: "Permanent Marker", cursive;
+    font-weight: 800;
+    text-align: center;
+}
+
+.promo-text:hover >a{
+    color: #3d3f4a;
 }
 
 #jobs ul li:hover{
